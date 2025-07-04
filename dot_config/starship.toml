@@ -1,6 +1,4 @@
 format = """
-# 
-
 [ $hostname ](bg:#a3aed2 fg:#1d2230)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\

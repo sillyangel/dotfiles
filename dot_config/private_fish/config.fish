@@ -1,3 +1,9 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    function sudo_last
+        sudo (history --max=1 | head -n1 | sed 's/^\s*[0-9]*\s*//')
+    end
+
+    alias !!=sudo_last
+
+    starship init fish | source
 end
